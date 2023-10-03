@@ -1,0 +1,102 @@
+اbsm ellah
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>page</title>
+</head>
+<body>
+<?php
+print'بسيبه يصدق اللي هو عاوزه';
+echo"<br>";
+echo gettype(true);
+echo"<br>";
+echo gettype(22);
+echo"<br>";
+echo gettype (array("eg" => "egypt" , "ksa"=> "saudia arbia"));
+echo"<br>";
+echo gettype(1+2);
+echo"<br>";
+echo (5+ (int)"5 lessons");//10
+echo"<br>";
+echo gettype(5+ (int)"5 lessons");//10
+echo"<br>";
+echo (int) (1.5 + 1.5) ;
+echo"<br>";
+echo gettype ((int)(1.5 + 1.5));
+echo"<br>";
+var_dump((bool)"0");
+echo"<br>";
+var_dump((bool)"broo");
+echo"<br>";
+var_dump((bool) array(22)); 
+echo"<br>";
+echo 'hello "php"';
+echo"<br>";
+echo 'hello php\\';
+
+echo"<br>";
+echo "hello \"php\"";
+
+echo"<br>";
+
+$name = "saidii";
+
+// heredoc
+
+echo <<<"Here"
+hello php
+special characters $$$ ' ' " " \\\\
+hello my name is $name
+Here;
+
+echo"<br>";
+
+// nowdoc
+echo <<<'Now'
+hello php
+special characters $$$ ' ' " " \\\\
+hello my name is $name
+Now;
+
+echo'<pre>';
+
+print_r([
+	"A" => "Ahmed",
+	"W" => "Wael",
+	"elazony",
+	true=>"hysm",
+	2=>"santiago",
+	
+	"discord"=>["azony","nafea","tamee","abmaksood"]
+	  
+]);
+echo'</pre>';
+
+echo"<br>";
+
+echo"<br>";
+echo('hello php
+On Multiple
+Lines');
+echo"<br>";
+
+echo"<br>";
+echo nl2br('hello php
+On Multiple
+Lines');
+/* 
+line one
+
+*/
+
+?>
+</body>
+</html>;
+
+
+
+
