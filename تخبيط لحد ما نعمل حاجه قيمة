@@ -1,5 +1,4 @@
-اbsm ellah
-
+بسم الله
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +32,34 @@ echo"<br>";
 var_dump((bool)"broo");
 echo"<br>";
 var_dump((bool) array(22)); 
+echo"<br>";
+
+$something = ("Programming");
+
+echo <<<"here"
+	Hello \PHP\
+	We Love $something
+here;
+echo"<br>";
+$Programming= ("Programming");
+
+echo <<<'now'
+Hello "'Elzero'"
+We Love $$Programming$
+Languages Specially "PHP" 
+now;
+echo"<br>";
+echo nl2br( "We 
+Love 
+Elzero 
+Web 
+School");
+
+// Needed Output
+
+echo"<br>";
+echo'Hello "Elzero" \\\ """ We Love "$$PHP"';
+echo"<br>";
 echo"<br>";
 echo 'hello "php"';
 echo"<br>";
@@ -77,7 +104,50 @@ print_r([
 echo'</pre>';
 
 echo"<br>";
+echo ((int)(15.2 + 14.7 + (10.5 + 10.5))); // 50
+echo"<br>";
+echo gettype((int)(15.2 + 14.7 + (10.5 + 10.5))); // Integer
+echo"<br>";
+/*print_r([
+	"frontend"=>[
+		"0"=>"html",
+		"1"=>"css",
+		"js"=>[
+			"vuejs"=>[
+				"2"=>"v2",
+				"3"=>"v3"],
+				"0"=>"reactjs",
+				"1"=>"svelte"]
+	]
+]);*/
+echo'<pre>';
+print_r([
+	"FrontEnd"=>[
+		"0"=>"html",
+		"1"=>"css",
+		"js"=>[
+			"vuejs"=>[
+				"2"=>"v2",
+				"3"=>"v3"],
+				"0"=>"reactjs",
+				"1"=>"svelte"]
+	],
 
+	"BackEnd"=>[
+		"php",
+		1=>"mysql",
+		2=>"security"
+	],
+
+	"0"=>["get"],
+
+	"1"=>["github"],
+
+	"Testing"=>["Unit Testing",
+	true=>"End To End",
+	2=>"Integration"   ]
+]);
+echo'<pre>';
 echo"<br>";
 echo('hello php
 On Multiple
